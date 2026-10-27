@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%2308070a'/%3E%3Cpath%20d='M16%204c4%205%207%209%207%2013a7%207%200%201%201-14%200c0-3%202-6%204-9%200%203%201%204%202%204%201%200%201-3%201-8z'%20fill='%23ff6a1f'/%3E%3C/svg%3E">
+<title>Les Neuf Portes — Le Pacte des Cendres (2027, fiction)</title>
+<meta name="description" content="Prototype d'expérience web pour une édition anniversaire fictive 2027 inspirée de l'univers du Hellfest. Concept indépendant et non officiel.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/experience.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu principal</a>
+
+<div class="strip" role="note">
+  <span class="strip-dot" aria-hidden="true"></span>
+  Concept indépendant et non officiel — édition anniversaire 2027 entièrement fictive.
+  <a href="dossier.html#transparence">Ce que cela implique</a>
+</div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Les Neuf Portes, accueil">
+    <span class="brand-mark" aria-hidden="true">IX</span>
+    <span class="brand-txt"><strong>Les Neuf Portes</strong><em>Le Pacte des Cendres — 2027</em></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <a href="descente.html">La Descente</a>
+    <a href="veillee.html">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html">Dossier</a>
+  </nav>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <svg class="hero-arches" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+      <defs>
+        <path id="arch" d="M0 520 V240 C0 150 45 90 60 20 C75 90 120 150 120 240 V520" fill="none" stroke="currentColor" stroke-width="1"/>
+      </defs>
+      <g style="color:rgba(244,238,227,.20)">
+        <use href="#arch" x="15"/><use href="#arch" x="145"/><use href="#arch" x="275"/>
+        <use href="#arch" x="405"/><use href="#arch" x="535"/><use href="#arch" x="665"/>
+        <use href="#arch" x="795"/><use href="#arch" x="925"/><use href="#arch" x="1055"/>
+      </g>
+    </svg>
+    <div class="embers" aria-hidden="true">
+      <i style="--x:12%;--d:0s;--s:3px"></i><i style="--x:23%;--d:2.4s;--s:2px"></i>
+      <i style="--x:38%;--d:5s;--s:4px"></i><i style="--x:51%;--d:1.2s;--s:2px"></i>
+      <i style="--x:64%;--d:6.6s;--s:3px"></i><i style="--x:77%;--d:3.4s;--s:2px"></i>
+      <i style="--x:88%;--d:8s;--s:3px"></i><i style="--x:44%;--d:9.2s;--s:2px"></i>
+    </div>
+
+    <p class="kicker">Édition anniversaire fictive · 12–14 novembre 2027 · Clisson (lieu fictif)</p>
+    <h1 class="hero-title">Les Neuf<br><span>Portes</span></h1>
+    <p class="hero-sub">Le Pacte des Cendres</p>
+    <p class="hero-lead">
+      Neuf portes se sont ouvertes la même nuit. Vous n'en franchirez peut-être qu'une.
+      Ce site n'est pas une page d'accueil : c'est une traversée.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="descente.html">Commencer la descente</a>
+      <a class="btn btn-ghost" href="infos.html">Aller droit aux infos</a>
+    </div>
+    <p class="hero-foot">Aucun compte. Aucune donnée envoyée. Aucun son imposé.</p>
+  </section>
+
+  <section class="myth" aria-labelledby="myth-h">
+    <div class="wrap myth-grid">
+      <div>
+        <p class="eyebrow">Le mythe (inventé)</p>
+        <h2 id="myth-h">On dit qu'en 2006, le festival n'entra pas par la grande porte.</h2>
+      </div>
+      <div class="myth-txt">
+        <p>Il entra par neuf petites. Neuf portes creusées dans le val.
+        Chaque année, une seule s'ouvrait : le public ne le savait pas, mais c'était elle qui donnait le ton de l'édition.</p>
+        <p>En 2027, pour l'anniversaire, les neuf s'ouvrent en même temps. Le pacte est ancien, il n'a jamais été écrit.
+        Il se transmet par la nuit, la poussière et le bruit.</p>
+        <p class="small muted">Récit entièrement fictif, inventé pour ce prototype. Il ne décrit aucun fait réel
+        et n'engage aucune organisation existante.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="modes" aria-labelledby="modes-h">
+    <div class="wrap">
+      <p class="eyebrow">Trois façons d'entrer</p>
+      <h2 id="modes-h" class="sr-only">Les trois modes de découverte</h2>
+      <div class="mode-grid">
+        <a class="mode" href="descente.html">
+          <span class="mode-n">01</span>
+          <h3>La Descente</h3>
+          <p class="mode-kind">Expérience immersive principale</p>
+          <p>Vous entrez avec une seule flamme. Elle est tout ce que vous avez pour lire les portes,
+          les actes et les heures. Ce que vous éclairez existe ; le reste attend.</p>
+          <span class="mode-cta">Entrer avec la flamme</span>
+        </a>
+        <a class="mode" href="veillee.html">
+          <span class="mode-n">02</span>
+          <h3>La Veillée</h3>
+          <p class="mode-kind">Découverte narrative</p>
+          <p>Neuf fragments, lus dans le noir, au rythme de votre défilement. Aucune recherche,
+          aucune flamme : seulement une histoire qui descend. Le son est optionnel.</p>
+          <span class="mode-cta">Lire la veillée</span>
+        </a>
+        <a class="mode" href="infos.html">
+          <span class="mode-n">03</span>
+          <h3>Les Infos</h3>
+          <p class="mode-kind">Accès direct et pratique</p>
+          <p>Programme filtrable, tarifs fictifs, accès, accessibilité, FAQ. Tout est accessible
+          immédiatement, sans traverser quoi que ce soit.</p>
+          <span class="mode-cta">Ouvrir les infos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lineup" aria-labelledby="lineup-h">
+    <div class="wrap">
+      <div class="lineup-head">
+        <div>
+          <p class="eyebrow">Les neuf actes des portes</p>
+          <h2 id="lineup-h">Programmation fictive</h2>
+        </div>
+        <p class="small muted">Tous les artistes, scènes et horaires ci-dessous sont inventés.
+        <a href="infos.html#programme">Voir le programme complet</a></p>
+      </div>
+      <ol class="doors">
+        <li><span class="door-rom">I</span><span class="door-name">Cendre</span><span class="door-act">Les Veuves de Fer</span></li>
+        <li><span class="door-rom">II</span><span class="door-name">Sel</span><span class="door-act">Marée Noire</span></li>
+        <li><span class="door-rom">III</span><span class="door-name">Verre</span><span class="door-act">Vitrail</span></li>
+        <li><span class="door-rom">IV</span><span class="door-name">Fer</span><span class="door-act">Les Marteaux de Clisson</span></li>
+        <li><span class="door-rom">V</span><span class="door-name">Braise</span><span class="door-act">Feu Follet</span></li>
+        <li><span class="door-rom">VI</span><span class="door-name">Cuir</span><span class="door-act">Ronce</span></li>
+        <li><span class="door-rom">VII</span><span class="door-name">Pluie</span><span class="door-act">Novembre</span></li>
+        <li><span class="door-rom">VIII</span><span class="door-name">Silence</span><span class="door-act">Chœur des Sans-Nom</span></li>
+        <li><span class="door-rom">IX</span><span class="door-name">Aube</span><span class="door-act">Le Pacte</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="notice-home" aria-labelledby="notice-h">
+    <div class="wrap notice-grid">
+      <h2 id="notice-h">Un exercice, pas une annonce</h2>
+      <div>
+        <p>Ce site est un <strong>prototype créatif indépendant</strong>, réalisé dans le cadre d'un exercice de conception.
+        Il n'a été ni commandé, ni validé, ni produit par le Hellfest ou par une quelconque organisation.
+        L'édition « Le Pacte des Cendres », ses dates de novembre 2027, ses artistes, ses scènes et ses tarifs sont
+        <strong>entièrement inventés</strong>.</p>
+        <p>L'édition réelle 2027 du Hellfest existe et se déroule à une autre date : ce prototype ne la remplace pas
+        et ne s'y substitue pas. Pour toute information réelle, consultez le site officiel du festival.</p>
+        <p><a class="link-arrow" href="dossier.html#transparence">Lire la note de transparence complète</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-note"><strong>Concept indépendant et non officiel.</strong> Édition anniversaire 2027 entièrement fictive.
+  Aucune affiliation avec Hellfest Productions ni avec aucune organisation citée. Aucune transaction réelle, aucune donnée personnelle collectée.</p>
+  <nav class="foot-nav" aria-label="Liens de pied de page">
+    <a href="descente.html">La Descente</a>
+    <a href="veillee.html">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html">Dossier &amp; méthode</a>
+    <a href="dossier.html#transparence">Transparence</a>
+  </nav>
+  <p class="foot-meta">Prototype HTML/CSS/JS sans dépendance externe · 2026</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Planche produite APRÈS COUP à partir des valeurs réellement présentes dans
+     assets/styles.css (:root). Ce n'est pas une planche de direction artistique
+     préparatoire : elle relève les jetons du prototype fini. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Jetons de couleur et de typographie relevés dans le CSS du prototype">
+  <rect width="1200" height="560" fill="#0b0910"/>
+
+  <text x="48" y="56" font-family="Helvetica Neue, Segoe UI, system-ui, sans-serif" font-size="27" font-weight="700" fill="#f4eee3">JETONS RELEVÉS DANS LE CSS</text>
+  <text x="48" y="84" font-family="ui-monospace, Consolas, monospace" font-size="12.5" letter-spacing="1.4" fill="#9a9287">VALEURS COPIÉES DE assets/styles.css · PLANCHES PRODUITES APRÈS COUP, PAS AVANT</text>
+
+  <!-- nuances -->
+  <g>
+    <rect x="48"  y="120" width="168" height="86" fill="#08070a" stroke="rgba(244,238,227,.18)"/>
+    <text x="48"  y="228" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#cfc7bb">#08070A</text>
+    <text x="48"  y="245" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="11" fill="#7d766c">--bg · fond</text>
+
+    <rect x="232" y="120" width="168" height="86" fill="#121017" stroke="rgba(244,238,227,.18)"/>
+    <text x="232" y="228" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#cfc7bb">#121017</text>
+    <text x="232" y="245" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="11" fill="#7d766c">--panel · panneaux</text>
+
+    <rect x="416" y="120" width="168" height="86" fill="#cfc7bb" stroke="rgba(244,238,227,.18)"/>
+    <text x="416" y="228" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#cfc7bb">#CFC7BB</text>
+    <text x="416" y="245" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="11" fill="#7d766c">--ash · texte courant</text>
+
+    <rect x="600" y="120" width="168" height="86" fill="#f4eee3"/>
+    <text x="600" y="228" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#cfc7bb">#F4EEE3</text>
+    <text x="600" y="245" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="11" fill="#7d766c">--bone · titres</text>
+
+    <rect x="784" y="120" width="168" height="86" fill="#ff6a1f"/>
+    <text x="784" y="228" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#cfc7bb">#FF6A1F</text>
+    <text x="784" y="245" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="11" fill="#7d766c">--ember · flamme, action</text>
+
+    <rect x="968" y="120" width="184" height="86" fill="#cf1f2c"/>
+    <text x="968" y="228" font-family="ui-monospace, Consolas, monospace" font-size="11" fill="#cfc7bb">#CF1F2C</text>
+    <text x="968" y="245" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="11" fill="#7d766c">--blood · non-officialité</text>
+  </g>
+
+  <!-- typographie -->
+  <line x1="48" y1="290" x2="1152" y2="290" stroke="rgba(244,238,227,.12)"/>
+
+  <text x="48" y="330" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.8" fill="#7d766c">DISPLAY — --font-display</text>
+  <text x="48" y="392" font-family="Arial Black, Helvetica Neue, Segoe UI, sans-serif" font-size="44" font-weight="900" letter-spacing="-1" fill="#f4eee3">LES NEUF PORTES</text>
+
+  <text x="48" y="436" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.8" fill="#7d766c">SERIF — --font-serif</text>
+  <text x="48" y="474" font-family="Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif" font-size="30" font-style="italic" fill="#ffb066">Le Pacte des Cendres</text>
+
+  <text x="620" y="330" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.8" fill="#7d766c">MONO — --font-mono</text>
+  <text x="620" y="362" font-family="ui-monospace, Consolas, monospace" font-size="12" letter-spacing="1.6" fill="#9a9287">ÉDITION ANNIVERSAIRE FICTIVE</text>
+  <text x="620" y="384" font-family="ui-monospace, Consolas, monospace" font-size="12" letter-spacing="1.6" fill="#9a9287">12–14 NOVEMBRE 2027</text>
+
+  <text x="620" y="436" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.8" fill="#7d766c">UI — --font-ui</text>
+  <text x="620" y="466" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="14" fill="#cfc7bb">Neuf portes se sont ouvertes la même nuit.</text>
+  <text x="620" y="488" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="14" fill="#cfc7bb">Vous n’en franchissez peut-être qu’une.</text>
+
+  <text x="48" y="530" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.2" fill="#7d766c">AUCUNE POLICE DISTANTE : LES QUATRE PILES SONT CELLES DU SYSTÈME, DÉCLARÉES AVEC LEURS REPLIS.</text>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sortie réelle du prototype : sceau produit par assets/app.js (buildSigil)
+     après franchissement des portes I, III et V. Dessin non retouché ;
+     seuls xmlns, width, height et un fond de panneau ont été ajoutés pour
+     que le fichier s'ouvre seul dans un navigateur. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" style="background:#121017" viewBox="0 0 200 200" role="img" aria-label="Sceau généré à partir des portes franchies">
+  <circle cx="100" cy="100" r="92" fill="none" stroke="rgba(244,238,227,.22)" stroke-width="1">
+  </circle>
+  <line x1="100" y1="16" x2="100" y2="8" stroke="#ff6a1f" stroke-width="2">
+  </line>
+  <line x1="100" y1="80" x2="100" y2="28" stroke="rgba(255,106,31,.85)" stroke-width="1.6" stroke-linecap="round">
+  </line>
+  <circle cx="100" cy="20" r="4.2" fill="#ffb066">
+  </circle>
+  <line x1="153.99415921366932" y1="35.65226677800585" x2="159.1364600911616" y2="29.523911233054022" stroke="rgba(244,238,227,.18)" stroke-width="1">
+  </line>
+  <line x1="182.7238512530255" y1="85.41355307597786" x2="190.60231327712313" y2="84.0243676546424" stroke="#ff6a1f" stroke-width="2">
+  </line>
+  <line x1="119.69615506024417" y1="96.5270364466614" x2="170.90615821687896" y2="87.49733120798102" stroke="rgba(255,106,31,.85)" stroke-width="1.6" stroke-linecap="round">
+  </line>
+  <circle cx="178.78462024097664" cy="86.10814578664558" r="4.2" fill="#ffb066">
+  </circle>
+  <line x1="172.74613391789285" y1="142" x2="179.67433714816838" y2="146" stroke="rgba(244,238,227,.18)" stroke-width="1">
+  </line>
+  <line x1="128.72969203935617" y1="178.9341801460163" x2="131.46585318596152" y2="186.45172111230357" stroke="#ff6a1f" stroke-width="2">
+  </line>
+  <line x1="106.84040286651337" y1="118.79385241571816" x2="124.62545031944816" y2="167.6578686965854" stroke="rgba(255,106,31,.85)" stroke-width="1.6" stroke-linecap="round">
+  </line>
+  <circle cx="127.3616114660535" cy="175.17540966287265" r="4.2" fill="#ffb066">
+  </circle>
+  <line x1="71.27030796064383" y1="178.9341801460163" x2="68.53414681403848" y2="186.45172111230357" stroke="rgba(244,238,227,.18)" stroke-width="1">
+  </line>
+  <line x1="27.25386608210715" y1="142" x2="20.325662851831638" y2="146" stroke="rgba(244,238,227,.18)" stroke-width="1">
+  </line>
+  <line x1="17.276148746974528" y1="85.41355307597784" x2="9.397686722876855" y2="84.02436765464239" stroke="rgba(244,238,227,.18)" stroke-width="1">
+  </line>
+  <line x1="46.00584078633069" y1="35.65226677800585" x2="40.86353990883837" y2="29.523911233054037" stroke="rgba(244,238,227,.18)" stroke-width="1">
+  </line>
+  <path d="M 100 42 A 58 58 0 0 1 157.11884967470806 89.92840569531805" fill="none" stroke="rgba(244,238,227,.28)" stroke-width="1">
+  </path>
+  <path d="M 157.11884967470806 89.92840569531805 A 58 58 0 0 1 119.83716831288879 154.50217200558268" fill="none" stroke="rgba(244,238,227,.28)" stroke-width="1">
+  </path>
+  <circle cx="100" cy="100" r="10" fill="none" stroke="#ff6a1f" stroke-width="1.6">
+  </circle>
+  <circle cx="100" cy="100" r="3" fill="#ff6a1f">
+  </circle>
+</svg>

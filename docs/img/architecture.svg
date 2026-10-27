@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Schéma produit APRÈS COUP, à partir des fichiers réellement présents dans le dépôt.
+     Ce n'est pas une maquette : il décrit l'existant, il ne l'a pas précédé. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-label="Architecture du prototype : cinq pages, six fichiers d’assets, un état local">
+  <rect width="1200" height="720" fill="#0b0910"/>
+
+  <text x="48" y="56" font-family="Helvetica Neue, Segoe UI, system-ui, sans-serif" font-size="27" font-weight="700" fill="#f4eee3">ARCHITECTURE DU PROTOTYPE</text>
+  <text x="48" y="84" font-family="ui-monospace, Consolas, monospace" font-size="12.5" letter-spacing="1.4" fill="#9a9287">5 PAGES · 6 FICHIERS D’ASSETS · 0 DÉPENDANCE · 0 REQUÊTE SORTANTE</text>
+
+  <!-- entêtes -->
+  <g font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.8" fill="#7d766c">
+    <text x="48"  y="128">PAGES</text>
+    <text x="452" y="128">ASSETS</text>
+    <text x="812" y="128">ÉTAT LOCAL &amp; SORTIES</text>
+  </g>
+  <g stroke="rgba(244,238,227,.12)">
+    <line x1="48"  y1="140" x2="392"  y2="140"/>
+    <line x1="452" y1="140" x2="760"  y2="140"/>
+    <line x1="812" y1="140" x2="1152" y2="140"/>
+  </g>
+
+  <!-- colonne 1 : pages -->
+  <g font-family="Helvetica Neue, Segoe UI, sans-serif">
+    <rect x="48" y="160" width="344" height="64" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="64" y="186" font-size="14.5" font-weight="700" fill="#f4eee3">index.html</text>
+    <text x="64" y="206" font-size="11.5" fill="#9a9287">Accueil : mythe, trois modes, programmation</text>
+
+    <rect x="48" y="236" width="344" height="64" fill="#121017" stroke="#ff6a1f"/>
+    <text x="64" y="262" font-size="14.5" font-weight="700" fill="#ff6a1f">descente.html</text>
+    <text x="64" y="282" font-size="11.5" fill="#9a9287">Mode A : flamme, neuf portes, braises, sceau</text>
+
+    <rect x="48" y="312" width="344" height="64" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="64" y="338" font-size="14.5" font-weight="700" fill="#f4eee3">veillee.html</text>
+    <text x="64" y="358" font-size="11.5" fill="#9a9287">Mode B : neuf fragments, son facultatif</text>
+
+    <rect x="48" y="388" width="344" height="64" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="64" y="414" font-size="14.5" font-weight="700" fill="#f4eee3">infos.html</text>
+    <text x="64" y="434" font-size="11.5" fill="#9a9287">Mode C : programme, pass, accès, FAQ</text>
+
+    <rect x="48" y="464" width="344" height="64" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="64" y="490" font-size="14.5" font-weight="700" fill="#f4eee3">dossier.html</text>
+    <text x="64" y="510" font-size="11.5" fill="#9a9287">Recherche, choix, DA, tests, limites</text>
+  </g>
+
+  <!-- flèches -->
+  <g stroke="rgba(255,106,31,.55)" fill="none">
+    <path d="M392 192 H 430 V 186 H 452"/>
+    <path d="M392 268 H 430 V 300 H 452"/>
+    <path d="M392 344 H 430 V 420 H 452"/>
+    <path d="M392 420 H 430 V 540 H 452"/>
+    <path d="M392 496 H 430 V 620 H 452"/>
+  </g>
+  <g font-family="ui-monospace, Consolas, monospace" font-size="10" fill="#7d766c">
+    <text x="398" y="184">link</text>
+    <text x="398" y="260">script</text>
+  </g>
+
+  <!-- colonne 2 : assets -->
+  <g font-family="Helvetica Neue, Segoe UI, sans-serif">
+    <rect x="452" y="160" width="308" height="52" fill="#17141c" stroke="rgba(244,238,227,.12)"/>
+    <text x="466" y="182" font-size="13" font-weight="600" fill="#f4eee3">styles.css</text>
+    <text x="466" y="199" font-size="10.5" fill="#9a9287">Jetons, base, accueil, pages intérieures</text>
+
+    <rect x="452" y="220" width="308" height="52" fill="#17141c" stroke="rgba(244,238,227,.12)"/>
+    <text x="466" y="242" font-size="13" font-weight="600" fill="#f4eee3">experience.css</text>
+    <text x="466" y="259" font-size="10.5" fill="#9a9287">Descente + Veillée + mouvement réduit</text>
+
+    <rect x="452" y="280" width="308" height="52" fill="#17141c" stroke="rgba(244,238,227,.12)"/>
+    <text x="466" y="302" font-size="13" font-weight="600" fill="#f4eee3">app.js</text>
+    <text x="466" y="319" font-size="10.5" fill="#9a9287">Nav, son procédural, buildSigil()</text>
+
+    <rect x="452" y="340" width="308" height="52" fill="#17141c" stroke="rgba(244,238,227,.12)"/>
+    <text x="466" y="362" font-size="13" font-weight="600" fill="#f4eee3">descente.js</text>
+    <text x="466" y="379" font-size="10.5" fill="#9a9287">Flamme, portes, braises, dialogues</text>
+
+    <rect x="452" y="400" width="308" height="52" fill="#17141c" stroke="rgba(244,238,227,.12)"/>
+    <text x="466" y="422" font-size="13" font-weight="600" fill="#f4eee3">veillee.js</text>
+    <text x="466" y="439" font-size="10.5" fill="#9a9287">Apparitions, progression, son</text>
+
+    <rect x="452" y="460" width="308" height="52" fill="#17141c" stroke="rgba(244,238,227,.12)"/>
+    <text x="466" y="482" font-size="13" font-weight="600" fill="#f4eee3">infos.js</text>
+    <text x="466" y="499" font-size="10.5" fill="#9a9287">Filtre, total fictif, pass</text>
+  </g>
+
+  <!-- colonne 3 : état -->
+  <g font-family="Helvetica Neue, Segoe UI, sans-serif">
+    <rect x="812" y="160" width="340" height="86" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="828" y="184" font-size="13" font-weight="600" fill="#f4eee3">DOORS[9]</text>
+    <text x="828" y="204" font-size="11" fill="#9a9287">Tableau écrit dans descente.js :</text>
+    <text x="828" y="221" font-size="11" fill="#9a9287">nom, acte, espace, date, heure, réplique.</text>
+    <text x="828" y="238" font-size="11" fill="#9a9287">Contenu entièrement fictif.</text>
+
+    <rect x="812" y="256" width="340" height="86" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="828" y="280" font-size="13" font-weight="600" fill="#f4eee3">sessionStorage</text>
+    <text x="828" y="300" font-size="11" fill="#9a9287">Clé « np.braises.v1 » : portes franchies.</text>
+    <text x="828" y="317" font-size="11" fill="#9a9287">Effacé à la fermeture de l’onglet.</text>
+    <text x="828" y="334" font-size="11" fill="#9a9287">Si le stockage est bloqué : dégradation simple.</text>
+
+    <rect x="812" y="352" width="340" height="86" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="828" y="376" font-size="13" font-weight="600" fill="#f4eee3">SVG généré</text>
+    <text x="828" y="396" font-size="11" fill="#9a9287">buildSigil() dessine 9 rayons + arcs</text>
+    <text x="828" y="413" font-size="11" fill="#9a9287">selon les portes franchies, puis</text>
+    <text x="828" y="430" font-size="11" fill="#9a9287">export via Blob + URL.createObjectURL.</text>
+
+    <rect x="812" y="448" width="340" height="86" fill="#121017" stroke="rgba(244,238,227,.16)"/>
+    <text x="828" y="472" font-size="13" font-weight="600" fill="#f4eee3">Web Audio</text>
+    <text x="828" y="492" font-size="11" fill="#9a9287">3 oscillateurs + filtre passe-bas modulé</text>
+    <text x="828" y="509" font-size="11" fill="#9a9287">par un LFO. Aucun fichier audio.</text>
+    <text x="828" y="526" font-size="11" fill="#9a9287">Coupé par défaut, arrêté sur pagehide.</text>
+  </g>
+
+  <!-- pied -->
+  <line x1="48" y1="596" x2="1152" y2="596" stroke="rgba(244,238,227,.12)"/>
+  <text x="48" y="624" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">Aucune bibliothèque, aucune police distante, aucune image bitmap : les arches, le grain, les sceaux et les textures</text>
+  <text x="48" y="646" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">sont du CSS ou du SVG écrit à la main. Le prototype fonctionne en <tspan font-family="ui-monospace, Consolas, monospace" fill="#ffb066">file://</tspan> comme derrière un serveur statique.</text>
+  <text x="48" y="682" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.2" fill="#7d766c">SCHÉMA PRODUIT APRÈS COUP — IL DÉCRIT L’EXISTANT, IL NE L’A PAS PRÉCÉDÉ</text>
+</svg>

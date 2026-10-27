@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%2308070a'/%3E%3Cpath%20d='M16%204c4%205%207%209%207%2013a7%207%200%201%201-14%200c0-3%202-6%204-9%200%203%201%204%202%204%201%200%201-3%201-8z'%20fill='%23ff6a1f'/%3E%3C/svg%3E">
+<title>La Descente — Les Neuf Portes (fiction 2027)</title>
+<meta name="description" content="Expérience immersive principale : neuf portes à révéler avec une seule flamme. Prototype fictif et non officiel.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/experience.css">
+</head>
+<body class="page-descente">
+<a class="skip" href="#main">Aller au contenu principal</a>
+
+<div class="strip" role="note">
+  <span class="strip-dot" aria-hidden="true"></span>
+  Concept indépendant et non officiel — édition anniversaire 2027 entièrement fictive.
+  <a href="dossier.html#transparence">Ce que cela implique</a>
+</div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Les Neuf Portes, accueil">
+    <span class="brand-mark" aria-hidden="true">IX</span>
+    <span class="brand-txt"><strong>Les Neuf Portes</strong><em>Le Pacte des Cendres — 2027</em></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <a href="descente.html" aria-current="page">La Descente</a>
+    <a href="veillee.html">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html">Dossier</a>
+  </nav>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<main id="main">
+
+  <section class="descente" id="descente" aria-labelledby="desc-h">
+    <div class="veil" id="veil" aria-hidden="true"></div>
+    <div class="flame" id="flame" aria-hidden="true"></div>
+
+    <div class="descente-head">
+      <p class="kicker">Expérience principale · lecture à la flamme</p>
+      <h1 id="desc-h">La Descente</h1>
+      <p class="descente-lead">
+        Neuf portes. Une seule flamme. Déplacez la lumière pour lire ce qui est gravé —
+        à la souris, ou avec <kbd>Tab</kbd> puis les <kbd>flèches</kbd>. Au doigt, touchez directement une porte.
+      </p>
+    </div>
+
+    <div class="gates" id="gates" aria-label="Les neuf portes"></div>
+
+    <div class="hud">
+      <p class="hud-count" aria-live="polite"><span id="emberCount">0</span> <span class="hud-of">/ 9 braises</span></p>
+      <div class="hud-actions">
+        <button class="btn btn-small btn-ghost" id="revealAll" aria-pressed="false">Tout révéler</button>
+        <button class="btn btn-small btn-primary" id="sealBtn">Voir mon sceau</button>
+      </div>
+    </div>
+
+    <p class="descente-hint" id="hint">Bougez la flamme · <kbd>Tout révéler</kbd> affiche la version lisible</p>
+
+    <noscript>
+      <p class="noscript">Cette expérience nécessite JavaScript. Le programme complet reste accessible dans
+      <a href="infos.html#programme">les infos pratiques</a>.</p>
+    </noscript>
+  </section>
+
+  <section class="after" aria-labelledby="after-h">
+    <div class="wrap after-grid">
+      <div>
+        <p class="eyebrow">Après la descente</p>
+        <h2 id="after-h">Ce que vous venez de traverser</h2>
+      </div>
+      <div>
+        <p>Chaque porte franchie laisse une <strong>braise</strong> : un point de lumière mémorisé
+        uniquement dans votre navigateur (rien n'est transmis, aucun compte). Les braises assemblent
+        un <strong>sceau</strong> — un dessin généré à partir de votre parcours, différent pour chaque combinaison.</p>
+        <p>Vous pouvez sortir à tout moment : la flamme n'est qu'un mode de lecture. Le programme,
+        les accès et l'accessibilité sont aussi disponibles en clair dans les infos pratiques.</p>
+        <div class="after-links">
+          <a class="btn btn-ghost" href="veillee.html">Écouter la veillée</a>
+          <a class="btn btn-ghost" href="infos.html">Infos pratiques</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="panel" id="panel" hidden>
+  <div class="panel-card" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
+    <button class="panel-close" id="panelClose" aria-label="Fermer">✕</button>
+    <p class="panel-rom" id="panelRom">Porte I</p>
+    <h2 class="panel-title" id="panelTitle">Cendre</h2>
+    <p class="panel-act" id="panelAct">Les Veuves de Fer</p>
+    <p class="panel-meta" id="panelMeta">Grand Autel · Ven. 12 nov. 2027 · 21:40</p>
+    <p class="panel-line" id="panelLine">« … »</p>
+    <p class="panel-note">Acte, scène, horaire et réplique entièrement fictifs.</p>
+    <div class="panel-actions">
+      <button class="btn btn-primary" id="panelSeal">Sceller cette braise</button>
+      <button class="btn btn-ghost" id="panelBack">Retour aux portes</button>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="sealPanel" hidden>
+  <div class="panel-card panel-seal" role="dialog" aria-modal="true" aria-labelledby="sealTitle">
+    <button class="panel-close" id="sealClose" aria-label="Fermer">✕</button>
+    <p class="panel-rom">Sceau de la veille</p>
+    <h2 class="panel-title" id="sealTitle">Votre parcours</h2>
+    <div class="sigil" id="sigil" aria-hidden="true"></div>
+    <p class="panel-meta" id="sealMeta">0 braise</p>
+    <p class="panel-complete" id="sealComplete" hidden>Les neuf portes sont ouvertes. Le pacte est scellé.</p>
+    <p class="panel-note">Dessin généré localement à partir des portes que vous avez franchies.
+    Il n'est stocké nulle part ailleurs que dans cet onglet.</p>
+    <div class="panel-actions">
+      <button class="btn btn-ghost" id="sealSave">Enregistrer en SVG</button>
+      <button class="btn btn-primary" id="sealBack">Continuer</button>
+    </div>
+  </div>
+</div>
+
+<footer class="foot">
+  <p class="foot-note"><strong>Concept indépendant et non officiel.</strong> Édition anniversaire 2027 entièrement fictive.
+  Aucune affiliation avec Hellfest Productions ni avec aucune organisation citée. Aucune transaction réelle, aucune donnée personnelle collectée.</p>
+  <nav class="foot-nav" aria-label="Liens de pied de page">
+    <a href="index.html">Accueil</a>
+    <a href="veillee.html">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html">Dossier &amp; méthode</a>
+    <a href="dossier.html#transparence">Transparence</a>
+  </nav>
+  <p class="foot-meta">Prototype HTML/CSS/JS sans dépendance externe · 2026</p>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/descente.js"></script>
+</body>
+</html>

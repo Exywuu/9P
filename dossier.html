@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%2308070a'/%3E%3Cpath%20d='M16%204c4%205%207%209%207%2013a7%207%200%201%201-14%200c0-3%202-6%204-9%200%203%201%204%202%204%201%200%201-3%201-8z'%20fill='%23ff6a1f'/%3E%3C/svg%3E">
+<title>Dossier de conception — Les Neuf Portes</title>
+<meta name="description" content="Recherche sur cinq organisations, choix argumenté, concept, direction artistique, tests et limites du prototype fictif Les Neuf Portes.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu principal</a>
+
+<div class="strip" role="note">
+  <span class="strip-dot" aria-hidden="true"></span>
+  Concept indépendant et non officiel — édition anniversaire 2027 entièrement fictive.
+  <a href="#transparence">Ce que cela implique</a>
+</div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Les Neuf Portes, accueil">
+    <span class="brand-mark" aria-hidden="true">IX</span>
+    <span class="brand-txt"><strong>Les Neuf Portes</strong><em>Le Pacte des Cendres — 2027</em></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <a href="descente.html">La Descente</a>
+    <a href="veillee.html">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html" aria-current="page">Dossier</a>
+  </nav>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="kicker">Dossier de conception · prototype</p>
+      <h1>Dossier</h1>
+      <p class="page-lead">Recherche sur les cinq candidats, décision argumentée, fiction, direction artistique,
+      tests réellement effectués et limites assumées. Ce document sépare systématiquement
+      <strong>le vérifié</strong>, <strong>l'interprété</strong> et <strong>le fictif</strong>.</p>
+      <nav class="subnav" aria-label="Sommaire du dossier">
+        <a href="#methode">Méthode</a>
+        <a href="#comparaison">Comparaison</a>
+        <a href="#choix">Le choix</a>
+        <a href="#recherche">Recherche</a>
+        <a href="#concept">Concept</a>
+        <a href="#da">Direction artistique</a>
+        <a href="#technique">Technique</a>
+        <a href="#tests">Tests</a>
+        <a href="#limites">Limites</a>
+        <a href="#transparence">Transparence</a>
+      </nav>
+    </div>
+  </section>
+
+  <section id="methode" class="wrap section">
+    <h2>Méthode &amp; périmètre de vérification</h2>
+    <div class="doc-grid">
+      <div class="doc-cell">
+        <h3>Ce que j'ai réellement fait</h3>
+        <ul>
+          <li>Consultation des cinq sites officiels par requête HTTP, avec extraction du texte des pages
+          (contenu HTML converti en texte), le 27 octobre 2026.</li>
+          <li>Relevé des intitulés de navigation, des offres, des chiffres et des accroches réellement présents
+          dans ce texte.</li>
+          <li>Analyse statique du prototype : syntaxe JavaScript, liens, ancres, identifiants, classes CSS.</li>
+          <li><strong>Rendu réel vérifié</strong> : captures d'écran avec Chromium 148 en 1440 × 950 (ordinateur)
+          et 390 × 844 (mobile), sur les cinq pages.</li>
+          <li><strong>Parcours scriptés</strong> : clics programmés sur une porte, le sceau, le filtre du programme,
+          le panier et le bouton son, avec relevé d'état à chaque étape.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Ce que je n'ai pas pu faire</h3>
+        <ul>
+          <li><strong>Aucun appareil réel</strong> : le viewport a été réduit à 390 px, mais aucun événement
+          tactile n'a été émis — le comportement au doigt est déduit du code, pas observé.</li>
+          <li><strong>Aucun lecteur d'écran</strong>, aucun enchaînement réel au <kbd>Tab</kbd> : seul un focus
+          programmé a été vérifié (la flamme suit le focus, contour visible).</li>
+          <li><strong>Aucune mesure de performance</strong> (Lighthouse) ni profil sur appareil modeste.</li>
+          <li><strong>Un seul moteur</strong> (Chromium 148) : Firefox et Safari n'ont pas été testés.</li>
+          <li><strong>Le son</strong> : déclenchement et coupure vérifiés, mais aucune écoute possible ici.</li>
+          <li><strong>Codes couleur et polices</strong> des sites officiels : non vérifiés (les valeurs CSS
+          n'étaient pas accessibles dans l'extraction).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="doc-grid" style="margin-top:18px">
+      <div class="doc-cell">
+        <h3>Séquence réelle de conception</h3>
+        <ol class="steps">
+          <li><strong>Recherche</strong> des cinq sites officiels et relevé des éléments vérifiables.</li>
+          <li><strong>Décision</strong> : comparaison écrite, choix du Hellfest, justification en cinq points.</li>
+          <li><strong>Concept avant code</strong> : le mythe, les neuf portes, le modèle de contenu
+          (acte, espace, date, heure, réplique), les trois modes et leur articulation.</li>
+          <li><strong>Implémentation directe</strong> : structure, feuilles de style, scripts, page par page.</li>
+          <li><strong>Vérification</strong> : rendu réel, parcours scriptés, corrections, re-captures.</li>
+        </ol>
+      </div>
+      <div class="doc-cell">
+        <h3>Ce qui n'a pas été fait en amont</h3>
+        <p><strong>Aucun wireframe, aucun moodboard, aucune maquette</strong> n'a été produit avant d'écrire le code :
+        j'ai conçu directement dans le navigateur. Choix assumé vu le temps imparti, mais avec un coût réel —
+        quatre défauts de mise en page (alignement du hero, retour à la ligne du bloc marque, barre d'état qui
+        assombrissait le bas de page, mode mouvement réduit illisible) n'ont été découverts qu'aux captures,
+        donc tard.</p>
+        <p>Avec plus de temps, j'aurais figé un wireframe des trois modes et une planche de styles
+        (couleurs, échelle typographique, états) <em>avant</em> le CSS, puis isolé la seule mécanique
+        réellement risquée — la révélation à la flamme — sur une page de test.</p>
+      </div>
+    </div>
+    <p class="small muted" style="margin-top:18px">Conséquence assumée : tout ce qui touche à l'apparence des sites
+    concurrents est présenté comme <em>interprétation</em>, jamais comme un constat. Les couleurs et typographies
+    de ce prototype sont mes propres choix, inspirés de l'imaginaire du festival, pas des valeurs relevées.</p>
+  </section>
+
+  <section id="comparaison" class="wrap section">
+    <h2>Les cinq candidats</h2>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th scope="col">Candidat</th>
+            <th scope="col">Univers</th>
+            <th scope="col">Éléments relevés sur le site</th>
+            <th scope="col">Potentiel d'expérience</th>
+            <th scope="col">Risque principal</th>
+            <th scope="col">Décision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shen Yun</td>
+            <td>Danse classique chinoise, tournée internationale</td>
+            <td>Cadrage politique explicite en tête de page, 8 compagnies, 500 artistes, ~20 tableaux par spectacle, orchestre sino-occidental</td>
+            <td>Très fort : mythes, dynasties, costumes, arts visuels</td>
+            <td>Cadrage politique explicite en page d'accueil ; toute réinterprétation frôle la prise de position</td>
+            <td><span class="tag tag-no">Écarté</span></td>
+          </tr>
+          <tr>
+            <td>Cirque du Soleil</td>
+            <td>Arts du cirque, productions et résidences</td>
+            <td>Catalogue très large (Alegría, KOOZA, LUZIA, O, KÀ, ECHO, KURIOS…), musique, expériences « shared reality », événements privés, blog</td>
+            <td>Très fort : rêve, corps, illusion, scénographie</td>
+            <td>Attente de production hollywoodienne impossible à tenir ; risque de singer une esthétique très protégée</td>
+            <td><span class="tag tag-no">Écarté</span></td>
+          </tr>
+          <tr>
+            <td>Country Jam</td>
+            <td>Festival country, Grand Junction (Colorado)</td>
+            <td>Édition 2025 du 26 au 28 juin ; Eric Church, Bailey Zimmerman, Cody Johnson ; bracelets cashless ; paliers GA / Reserved / VIP / Ultra VIP</td>
+            <td>Réel : culture du camping, route, feu de bois, narration américaine</td>
+            <td>Peu de matière vérifiable sur l'histoire ; identité visuelle générique ; pas de mythologie disponible</td>
+            <td><span class="tag">Finaliste</span></td>
+          </tr>
+          <tr class="pick">
+            <td>Hellfest</td>
+            <td>Festival de musiques extrêmes, Clisson, depuis 2006</td>
+            <td>« Home of Hellbangers Since 2006 », « Clisson – Rock City », 4 jours, +300 artistes, 240 000 hellbangers, pass 4 jours 389 € épuisé, revente officielle, rubrique accessibilité PMR, aftermovie annuel, site bilingue FR/EN</td>
+            <td>Très fort : rituel, feu, nuit, foule, lexique de l'enfer déjà présent dans la marque</td>
+            <td>Clichés sataniques, « dark UX » illisible, saturation d'effets</td>
+            <td><span class="tag tag-ok">Retenu</span></td>
+          </tr>
+          <tr>
+            <td>Lollapalooza Stockholm</td>
+            <td>Festival urbain, réseau international</td>
+            <td>Page essentiellement construite en JavaScript : seuls le logo et une image de tête ont pu être récupérés</td>
+            <td>Moyen à fort (pop, ville, été)</td>
+            <td>Information non vérifiable : impossible d'analyser le contenu sans rendu</td>
+            <td><span class="tag tag-no">Écarté</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="choix" class="wrap section">
+    <h2>Pourquoi le Hellfest</h2>
+    <div class="doc-grid">
+      <div class="doc-cell">
+        <h3>1. Un univers qui contient déjà sa fiction</h3>
+        <p>Le nom, le lieu, le vocabulaire (« hellbangers »), le feu, la nuit : la marque porte une mythologie
+        implicite. Plutôt que d'importer une histoire, il suffit de lui donner une forme. C'est exactement
+        le terrain d'un anniversaire fictif crédible.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>2. Une contrainte créative idéale : l'obscurité</h3>
+        <p>Un festival de nuit permet de fonder l'interaction sur la lumière, pas sur des effets gratuits :
+        le visiteur éclaire lui-même ce qu'il découvre. Une seule mécanique, lisible, qui structure tout le site.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>3. Un besoin réel du public</h3>
+        <p>Entre l'aftermovie et la billetterie, un fan n'a rien à explorer le reste de l'année. Une expérience
+        annuelle, courte, sans compte, entretient l'attachement. Le site officiel soigne déjà la transparence
+        (revente officielle) et l'accessibilité : mon mode « Infos » reprend ces priorités plutôt que de les diluer.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>4. Une expérience qui n'existe pas sur le site actuel</h3>
+        <p>Le site officiel organise l'information (programme, billets, infos). Il ne propose pas de traversée.
+        Ici : neuf portes, une flamme, un sceau personnel généré à partir du parcours — un objet à soi,
+        pas un carrousel de photos.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>5. Un choix tenable techniquement</h3>
+        <p>Identité forte mais simple à réinterpréter (noir, braise, typographie massive), contenu entièrement
+        inventable sans photographies sous licence, interactions réalisables sans 3D, sans backend, sans police distante.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Ce que je n'ai pas voulu faire</h3>
+        <p>Pas de crânes, pas de pentagrammes, pas de sang : ces codes appartiennent au merchandising et
+        enfermeraient le propos. La fidélité passe par le rythme, la nuit, la chaleur et la communauté — pas
+        par la citation littérale des symboles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recherche" class="wrap section">
+    <h2>Recherche par candidat</h2>
+    <p class="muted">Chaque bloc distingue <strong>A</strong> ce qui a été directement lu sur le site officiel,
+    <strong>B</strong> ce que j'en déduis, <strong>C</strong> ce qui est resté inaccessible.</p>
+
+    <div class="doc-grid" style="margin-top:18px">
+      <div class="doc-cell">
+        <h3>Hellfest — retenu</h3>
+        <p><span class="tag tag-ok">A · vérifié</span> « Home of Hellbangers Since 2006 » ; « Clisson – Rock City » ;
+        édition 2027 annoncée du 17 au 20 juin ; 4 jours, +300 artistes, 240 000 hellbangers ; pass 4 jours à 389 €
+        épuisé ; revente officielle mise en avant ; rubriques News, Info (Ticketing, General Info), The Festival
+        (Shop, Experience, Partners), Prévention, Accessibilité PMR-PWD ; aftermovie 2026 en vidéo ; version FR/EN.</p>
+        <p><span class="tag">B · interprété</span> Ton direct et communautaire ; la marque s'adresse à ses fans
+        comme à un groupe (emploi du surnom « hellbangers ») ; la revente officielle répond à un vrai problème
+        de confiance ; l'accessibilité est traitée comme un sujet à part entière.</p>
+        <p><span class="tag tag-no">C · non accessible</span> Palette exacte, polices, mise en page réelle,
+        comportements mobiles, ambiance sonore ou vidéo en page d'accueil.</p>
+      </div>
+
+      <div class="doc-cell">
+        <h3>Cirque du Soleil — écarté</h3>
+        <p><span class="tag tag-ok">A · vérifié</span> Accroche « Welcome to a new era of Cirque du Soleil » ;
+        très large catalogue de spectacles en tournée et en résidence ; entrées Musique, expérience en réalité
+        partagée (COSM), événements de groupe, blog éditorial dense.</p>
+        <p><span class="tag">B · interprété</span> Marque mondiale dont le site est d'abord un moteur de
+        découverte et de réservation ; l'émotion est déléguée aux visuels de spectacle.</p>
+        <p><span class="tag tag-no">C · non accessible</span> Direction artistique précise, animations,
+        parcours de réservation réels, versions mobiles.</p>
+      </div>
+
+      <div class="doc-cell">
+        <h3>Country Jam — finaliste</h3>
+        <p><span class="tag tag-ok">A · vérifié</span> Page d'accueil affichant « June 26-28, 2025 — Grand Junction,
+        Colorado » ; têtes d'affiche Eric Church, Bailey Zimmerman, Cody Johnson ; activation des bracelets et
+        paiement cashless ; quatre niveaux de billets (GA, Reserved, VIP, Ultra VIP) ; bloc sponsor.</p>
+        <p><span class="tag">B · interprété</span> Expérience très « américaine », centrée sur le confort et
+        l'organisation ; peu de récit de marque.</p>
+        <p><span class="tag tag-no">C · non accessible</span> Historique du festival, identité graphique
+        (couleurs, typographies), contenu des éditions passées.</p>
+      </div>
+
+      <div class="doc-cell">
+        <h3>Shen Yun — écarté</h3>
+        <p><span class="tag tag-ok">A · vérifié</span> Titre de page au cadrage politique explicite (formulation
+        non reproduite ici) ; mise en avant de huit compagnies et cinq cents artistes ; environ vingt tableaux
+        par spectacle ; orchestre mêlant instruments chinois et occidentaux ; bouton de bande-annonce.</p>
+        <p><span class="tag">B · interprété</span> Le spectacle est présenté comme une célébration culturelle,
+        mais la page d'accueil installe d'emblée un cadre politique.</p>
+        <p><span class="tag tag-no">C · non accessible</span> Direction artistique, parcours de réservation,
+        vidéos.</p>
+        <p class="small">Motif d'exclusion : un exercice de réinterprétation neutre n'est pas compatible avec un
+        positionnement politique affiché. Ce n'est pas un jugement sur le spectacle, mais un critère de faisabilité
+        pour cet exercice précis.</p>
+      </div>
+
+      <div class="doc-cell">
+        <h3>Lollapalooza Stockholm — écarté</h3>
+        <p><span class="tag tag-ok">A · vérifié</span> Seuls le logo du réseau et une image de tête ont été
+        récupérés ; le reste de la page est construit côté client.</p>
+        <p><span class="tag">B · interprété</span> Site de réseau international, très standardisé.</p>
+        <p><span class="tag tag-no">C · non accessible</span> Programme, billetterie, ton, structure de navigation,
+        identité visuelle — l'essentiel, en fait.</p>
+        <p class="small">Exclu pour une raison de méthode : je ne pouvais pas décrire honnêtement ce que je n'avais pas pu lire.</p>
+      </div>
+
+      <div class="doc-cell">
+        <h3>Ce que la comparaison a produit</h3>
+        <p>Trois candidats offrent une mythologie immédiatement disponible (Shen Yun, Cirque du Soleil, Hellfest).
+        Deux posent problème : l'un pour des raisons de cadrage, l'autre pour des raisons de vérifiabilité.
+        Country Jam était le choix « simple » séduisant, mais son univers visuel m'offrait moins de prise
+        pour une mécanique d'expérience originale. Le Hellfest gagne parce qu'il permet une interaction
+        minimale (la lumière) au service d'un récit maximal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="concept" class="wrap section">
+    <h2>Le concept</h2>
+    <div class="doc-grid">
+      <div class="doc-cell">
+        <h3>La fiction</h3>
+        <p>« Le Pacte des Cendres » : une édition anniversaire imaginaire, les 12, 13 et 14 novembre 2027,
+        sur un site inventé (Le Val des Neuf Portes, à Clisson). Neuf portes s'ouvrent la même nuit.
+        Neuf actes portés par ces portes, douze actes au programme, cinq espaces, une jauge réduite
+        à 9 000 personnes par nuit.</p>
+        <p>Ni le nombre d'années ni la date ne renvoient à un anniversaire réel : l'édition réelle 2027
+        se tient en juin, sur quatre jours. Le décalage est volontaire et affiché.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Les trois modes</h3>
+        <p><strong>A — La Descente</strong> (expérience principale) : le visiteur entre avec une flamme.
+        Neuf portes, révélées par la lumière ; chaque porte franchie laisse une braise ; les braises
+        composent un sceau généré.</p>
+        <p><strong>B — La Veillée</strong> : neuf fragments narratifs, en défilement continu, avec une nappe
+        sonore synthétisée et facultative. Aucune interaction, aucun repérage : l'inverse temporel du mode A.</p>
+        <p><strong>C — Les Infos</strong> : programme filtrable, pass fictifs, accès, accessibilité, FAQ.
+        Autonome, sans dépendre des deux autres modes.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Ce qui est réellement implémenté</h3>
+        <ul>
+          <li>Flammes : suivi du pointeur, révélation à distance, clavier (flèches), mode « tout révéler ».</li>
+          <li>Neuf portes avec panneau accessible (focus piégé, <kbd>Échap</kbd>).</li>
+          <li>Braises mémorisées dans l'onglet, compteur, sceau SVG déterministe, export SVG.</li>
+          <li>Veillée : apparitions au défilement, barre de progression, son Web Audio optionnel.</li>
+          <li>Infos : filtre par nuit, panier fictif, pass de démonstration avec sceau, modalités de participation.</li>
+          <li>Responsive, préférences de mouvement réduit, focus visibles, contrastes élevés.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Ce qui est simulé — et le dit</h3>
+        <ul>
+          <li>La billetterie : aucun paiement, aucun serveur, pass marqué « non valable ».</li>
+          <li>Les données de programme : inventées, signalées à chaque bloc.</li>
+          <li>Les lieux précis (navettes, parkings) : plausibles mais fictifs.</li>
+          <li>Aucun compte, aucun formulaire, aucun cookie, aucun appel réseau externe.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="da" class="wrap section">
+    <h2>Direction artistique</h2>
+    <div class="doc-grid">
+      <div class="doc-cell">
+        <h3>Palette</h3>
+        <div class="swatches" aria-hidden="true">
+          <span style="background:#08070a"></span><span style="background:#17141c"></span>
+          <span style="background:#cfc7bb"></span><span style="background:#f4eee3"></span>
+          <span style="background:#ff6a1f"></span><span style="background:#cf1f2c"></span>
+        </div>
+        <p class="spec">#08070a · #17141c · #cfc7bb · #f4eee3 · #ff6a1f · #cf1f2c</p>
+        <p>Noir de nuit, cendre, os, braise. Le rouge n'est utilisé que pour la mention de non-officialité :
+        il ne doit pas devenir décoratif.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Typographie</h3>
+        <p>Trois voix : une <strong>display</strong> très grasse et serrée (affiche de concert), une
+        <strong>serif</strong> éditoriale pour le récit et les répliques, une <strong>mono</strong> pour les
+        données (horaires, lieux, compteurs). Aucune police distante : les piles système garantissent un
+        chargement instantané et un fonctionnement hors ligne.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Ce qui n'est pas repris</h3>
+        <p>Aucun logo, aucune photographie, aucun slogan, aucune vidéo, aucun extrait musical, aucun code du site
+        officiel. Le lettrage « Les Neuf Portes » est typographique ; les textures sont générées (dégradés,
+        grain SVG) ; les sceaux sont dessinés par le code.</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Fidélité sans imitation</h3>
+        <p>Ce qui est repris : la nuit, le feu, la densité typographique, l'adresse directe au public,
+        le goût des listes et des horaires. Ce qui est refusé : l'imagerie gothique de catalogue et
+        le sensationnalisme. L'objectif est la reconnaissance par l'atmosphère, pas par la copie.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="technique" class="wrap section">
+    <h2>Technique</h2>
+    <div class="doc-grid">
+      <div class="doc-cell">
+        <h3>Pile</h3>
+        <p>HTML, CSS et JavaScript natifs. Aucun framework, aucune dépendance, aucune étape de build.
+        Le site fonctionne en ouvrant <code>index.html</code> ou via un serveur statique local.</p>
+        <p class="spec">5 pages · 2 feuilles de style · 4 scripts · ~0 requête externe</p>
+      </div>
+      <div class="doc-cell">
+        <h3>Choix d'implémentation</h3>
+        <ul>
+          <li>Révélation par <em>gradient radial</em> et variable CSS de position, pas de WebGL :
+          coût nul, compatible avec les appareils modestes.</li>
+          <li>Sceau généré en SVG déterministe : même parcours, même dessin, sans stockage serveur.</li>
+          <li>Son synthétisé (deux oscillateurs + filtre lent), jamais chargé depuis un fichier.</li>
+          <li>Tactile : la flamme ne suit pas le doigt pour ne pas confisquer le défilement ;
+          les portes s'ouvrent au tap et restent lisibles.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Accessibilité</h3>
+        <ul>
+          <li>Lien d'évitement, structure de titres, régions nommées.</li>
+          <li>Focus visibles (contour braise de 3 px), panneaux avec focus piégé et fermeture par <kbd>Échap</kbd>.</li>
+          <li>Alternative complète aux animations : bouton « Tout révéler » + respect de
+          <code>prefers-reduced-motion</code>.</li>
+          <li>Le son est facultatif, coupé par défaut, contrôlable et arrêté à la sortie de page.</li>
+          <li>Aucun contenu essentiel derrière une interaction.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Performance</h3>
+        <p>Pas d'image bitmap, pas de police distante, animations limitées à des propriétés composées
+        (transform, opacity). Les calculs de révélation sont limités à neuf éléments et cadencés par
+        <code>requestAnimationFrame</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tests" class="wrap section">
+    <h2>Tests réellement effectués</h2>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead><tr><th scope="col">Vérification</th><th scope="col">Méthode</th><th scope="col">Résultat</th></tr></thead>
+        <tbody>
+          <tr><td>Syntaxe JavaScript</td><td><code>node --check</code> sur les 4 scripts</td><td><span class="tag tag-ok">OK</span></td></tr>
+          <tr><td>Liens et ressources internes</td><td>Script d'analyse des <code>href</code>/<code>src</code> des 5 pages</td><td><span class="tag tag-ok">OK — 0 lien cassé</span></td></tr>
+          <tr><td>Ancres internes</td><td>Comparaison des ancres (<code>#nom-de-section</code>) avec les identifiants des pages cibles</td><td><span class="tag tag-ok">OK</span></td></tr>
+          <tr><td>Identifiants utilisés par le JS</td><td>Extraction des <code>getElementById</code> et vérification dans le HTML</td><td><span class="tag tag-ok">OK</span></td></tr>
+          <tr><td>Balises HTML, unicité des <code>id</code>, un seul <code>h1</code> par page</td><td>Script de contrôle de structure</td><td><span class="tag tag-ok">OK</span></td></tr>
+          <tr><td>Classes sans règle CSS</td><td>Comparaison classes HTML / sélecteurs CSS</td><td><span class="tag tag-ok">3 oublis réels corrigés</span></td></tr>
+          <tr><td>Rendu ordinateur 1440 × 950</td><td>Chromium 148 <em>headless</em>, capture des 5 pages</td><td><span class="tag tag-ok">OK</span> — 2 défauts corrigés (alignement du hero, retour à la ligne du bloc marque)</td></tr>
+          <tr><td>Rendu mobile 390 × 844</td><td>Même moteur, viewport réduit</td><td><span class="tag tag-ok">OK</span> — marge basse ajoutée sous la barre d'état</td></tr>
+          <tr><td>Ouverture d'une porte</td><td>Clic programmé sur la porte V</td><td><span class="tag tag-ok">Panneau affiché, contenu correct</span></td></tr>
+          <tr><td>Braise + sceau</td><td>Sceller puis ouvrir le sceau</td><td><span class="tag tag-ok">braises = 1, sceau visible, SVG généré</span></td></tr>
+          <tr><td>Filtre du programme</td><td>Clic sur « Vendredi 12 » puis « Tout »</td><td><span class="tag tag-ok">4 lignes puis 12 lignes</span></td></tr>
+          <tr><td>Panier et pass fictif</td><td>Cocher « Trois nuits » puis générer</td><td><span class="tag tag-ok">96 €, pass affiché avec sceau</span></td></tr>
+          <tr><td>Bouton son</td><td>Activer puis couper</td><td><span class="tag tag-ok">aria-pressed true → false</span> (non écouté)</td></tr>
+          <tr><td>Mode « Tout révéler »</td><td>Clic</td><td><span class="tag tag-ok">classe <code>is-revealed</code>, aria-pressed = true</span></td></tr>
+          <tr><td>Mouvement réduit</td><td>Lancement avec <code>prefers-reduced-motion</code> forcé</td><td><span class="tag tag-ok">Les neuf portes lisibles, flamme et contrôles inutiles masqués</span> — défaut corrigé</td></tr>
+          <tr><td>Progression de la Veillée</td><td>Défilement programmé à 1 400 px</td><td><span class="tag tag-ok">barre à 27,36 %</span></td></tr>
+          <tr><td>Erreurs JavaScript</td><td>Gestionnaire <code>onerror</code> actif pendant les parcours</td><td><span class="tag tag-ok">Aucune remontée</span></td></tr>
+          <tr><td>Focus clavier sur une porte</td><td><code>focus()</code> programmé sur la porte I</td><td><span class="tag tag-ok">flamme déplacée, porte éclairée, contour de 3 px</span> — enchaînement réel au <kbd>Tab</kbd> non testé</td></tr>
+          <tr><td>Lecteur d'écran</td><td>—</td><td><span class="tag tag-no">Non testé</span></td></tr>
+          <tr><td>Tactile sur appareil</td><td>—</td><td><span class="tag tag-no">Non testé</span></td></tr>
+          <tr><td>Performance mesurée</td><td>—</td><td><span class="tag tag-no">Non mesurée</span></td></tr>
+          <tr><td>Firefox / Safari</td><td>—</td><td><span class="tag tag-no">Non testés</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:16px">Aucun test n'est présenté comme réussi s'il n'a pas été exécuté.
+    Les lignes « non réalisé » correspondent à des vérifications impossibles dans cet environnement, pas à des échecs du prototype.</p>
+  </section>
+
+  <section id="limites" class="wrap section">
+    <h2>Limites &amp; état réel</h2>
+    <div class="doc-grid">
+      <div class="doc-cell">
+        <h3>Inachevé ou partiel</h3>
+        <ul>
+          <li>Aucune version anglaise (le site officiel est bilingue ; ce prototype est francophone).</li>
+          <li>Pas de carte interactive des espaces : l'accès est décrit en texte.</li>
+          <li>Le sceau est décoratif : il n'ouvre aucun contenu supplémentaire.</li>
+          <li>Pas de suite de tests automatisés : les vérifications ont été faites à la main et par scripts ponctuels.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Fragilités connues</h3>
+        <ul>
+          <li>La révélation à la flamme est peu pertinente au doigt : sur mobile, les portes sont
+          volontairement lisibles sans interaction.</li>
+          <li>Le stockage d'onglet peut être bloqué en navigation privée : le site continue sans mémoire.</li>
+          <li>Sans JavaScript, la Descente et la Veillée n'affichent pas leur contenu ; les Infos restent lisibles.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="transparence" class="wrap section">
+    <h2>Transparence</h2>
+    <p class="callout"><strong>Concept indépendant et non officiel. Édition anniversaire 2027 entièrement fictive.</strong>
+    Ce prototype n'a été ni commandé, ni validé, ni produit par le Hellfest, par Hellfest Productions ou par
+    l'une des organisations étudiées. Aucun partenariat, aucun soutien officiel, aucune déclaration attribuée
+    à une personne réelle.</p>
+    <div class="doc-grid" style="margin-top:18px">
+      <div class="doc-cell">
+        <h3>Réel (vérifié)</h3>
+        <ul>
+          <li>Le Hellfest existe, se déroule à Clisson depuis 2006.</li>
+          <li>Son édition 2027 est annoncée du 17 au 20 juin, sur quatre jours.</li>
+          <li>Les éléments cités dans la partie recherche proviennent du texte de son site officiel.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Fictif (inventé)</h3>
+        <ul>
+          <li>« Le Pacte des Cendres », les 12–14 novembre 2027, le Val des Neuf Portes.</li>
+          <li>Les neuf portes, les artistes, les scènes, les horaires, les tarifs, la jauge.</li>
+          <li>Le mythe fondateur, les répliques, la nappe sonore.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Démonstration</h3>
+        <ul>
+          <li>Le panier et le pass : simulation locale, mention « non valable ».</li>
+          <li>Les braises et le sceau : mémorisés dans l'onglet, jamais transmis.</li>
+          <li>Aucune billetterie réelle, aucun lien de réservation, aucun paiement.</li>
+        </ul>
+      </div>
+      <div class="doc-cell">
+        <h3>Sources</h3>
+        <ul>
+          <li>Sites officiels : hellfest.fr, cirquedusoleil.com, countryjam.com, lollastockholm.com, shenyun.com.</li>
+          <li>Consultation le 27 octobre 2026, par extraction de texte.</li>
+          <li>Aucune autre source n'a été utilisée ; aucune production d'une autre IA n'a été consultée.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-note"><strong>Concept indépendant et non officiel.</strong> Édition anniversaire 2027 entièrement fictive.
+  Aucune affiliation avec Hellfest Productions ni avec aucune organisation citée. Aucune transaction réelle, aucune donnée personnelle collectée.</p>
+  <nav class="foot-nav" aria-label="Liens de pied de page">
+    <a href="index.html">Accueil</a>
+    <a href="descente.html">La Descente</a>
+    <a href="veillee.html">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+  </nav>
+  <p class="foot-meta">Prototype HTML/CSS/JS sans dépendance externe · 2026</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

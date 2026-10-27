@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Schéma produit APRÈS COUP (27/10/2026, après la session). Ce n'est ni une maquette
+     ni une capture : les horaires proviennent des dates de modification des fichiers
+     du dépôt et de l'horodatage des captures conservées hors dépôt. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Chronologie réelle de la session, de 16 h 54 à 17 h 40">
+  <rect width="1200" height="630" fill="#0b0910"/>
+
+  <text x="48" y="56" font-family="Helvetica Neue, Segoe UI, system-ui, sans-serif" font-size="27" font-weight="700" fill="#f4eee3">CHRONOLOGIE RÉELLE DE LA SESSION</text>
+  <text x="48" y="84" font-family="ui-monospace, Consolas, monospace" font-size="12.5" letter-spacing="1.4" fill="#9a9287">27 OCTOBRE 2026 · 16:54:58 → 17:40:00 · 45 MINUTES · AUCUNE PHASE DE MAQUETTAGE</text>
+
+  <!-- axe : 48 → 1041, colonne des durées à droite -->
+  <line x1="48" y1="126" x2="1041" y2="126" stroke="rgba(244,238,227,.16)" stroke-width="1"/>
+  <g font-family="ui-monospace, Consolas, monospace" font-size="10.5" fill="#7d766c" text-anchor="middle">
+    <line x1="48"   y1="120" x2="48"   y2="132" stroke="rgba(244,238,227,.28)"/><text x="48"   y="114">16:54</text>
+    <line x1="177"  y1="120" x2="177"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="177"  y="114">17:00</text>
+    <line x1="285"  y1="120" x2="285"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="285"  y="114">17:05</text>
+    <line x1="393"  y1="120" x2="393"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="393"  y="114">17:10</text>
+    <line x1="501"  y1="120" x2="501"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="501"  y="114">17:15</text>
+    <line x1="609"  y1="120" x2="609"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="609"  y="114">17:20</text>
+    <line x1="717"  y1="120" x2="717"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="717"  y="114">17:25</text>
+    <line x1="825"  y1="120" x2="825"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="825"  y="114">17:30</text>
+    <line x1="933"  y1="120" x2="933"  y2="132" stroke="rgba(244,238,227,.28)"/><text x="933"  y="114">17:35</text>
+    <line x1="1041" y1="120" x2="1041" y2="132" stroke="rgba(244,238,227,.28)"/><text x="1041" y="114">17:40</text>
+  </g>
+
+  <!-- voie 1 -->
+  <text x="48" y="166" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">Étude des cinq sites, comparaison, décision</text>
+  <text x="1152" y="166" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="10.5" fill="#7d766c">16:55 → 17:05</text>
+  <rect x="70" y="174" width="215" height="9" fill="#cf1f2c"/>
+
+  <!-- voie 2 -->
+  <text x="285" y="212" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">Construction : 5 pages, 6 fichiers d’assets</text>
+  <text x="1152" y="212" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="10.5" fill="#7d766c">17:05 → 17:24</text>
+  <rect x="285" y="220" width="410" height="9" fill="#ff6a1f"/>
+
+  <!-- voie 3 -->
+  <text x="330" y="258" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">Corrections de rendu relevées sur captures</text>
+  <text x="1152" y="258" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="10.5" fill="#7d766c">17:08 → 17:25</text>
+  <rect x="330" y="266" width="387" height="9" fill="none" stroke="#ff6a1f" stroke-width="1.5"/>
+
+  <!-- voie 4 -->
+  <text x="717" y="304" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">Modalités de participation, méthode, dossier</text>
+  <text x="1152" y="304" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="10.5" fill="#7d766c">17:25 → 17:32</text>
+  <rect x="717" y="312" width="151" height="9" fill="none" stroke="#ff6a1f" stroke-width="1.5"/>
+
+  <!-- voie 5 -->
+  <text x="868" y="350" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13" fill="#cfc7bb">Finition : sceau, densité, focus</text>
+  <text x="1152" y="350" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="10.5" fill="#7d766c">17:32 → 17:39</text>
+  <rect x="868" y="358" width="151" height="9" fill="none" stroke="#ff6a1f" stroke-width="1.5"/>
+
+  <!-- captures -->
+  <text x="48" y="412" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.4" fill="#7d766c">CAPTURES CHROMIUM 148</text>
+  <line x1="48" y1="424" x2="1041" y2="424" stroke="rgba(244,238,227,.10)" stroke-width="1"/>
+  <g fill="#f4eee3">
+    <circle cx="306" cy="424" r="3.6"/>
+    <circle cx="350" cy="424" r="3.6"/>
+    <circle cx="371" cy="424" r="3.6"/>
+    <circle cx="393" cy="424" r="3.6"/>
+    <circle cx="458" cy="424" r="3.6"/>
+    <circle cx="501" cy="424" r="3.6"/>
+    <circle cx="630" cy="424" r="3.6"/>
+    <circle cx="868" cy="424" r="3.6"/>
+    <circle cx="976" cy="424" r="3.6"/>
+    <circle cx="1041" cy="424" r="3.6"/>
+  </g>
+  <text x="48" y="452" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="12" fill="#9a9287">La première capture date de 17:06 — le prototype est déjà écrit. Rien n’a été dessiné avant.</text>
+
+  <!-- encart -->
+  <rect x="48" y="486" width="1104" height="112" fill="none" stroke="rgba(207,31,44,.5)" stroke-width="1"/>
+  <rect x="48" y="486" width="4" height="112" fill="#cf1f2c"/>
+  <text x="72" y="514" font-family="ui-monospace, Consolas, monospace" font-size="10.5" letter-spacing="1.6" fill="#cf1f2c">CE QUE LA CHRONOLOGIE MONTRE</text>
+  <text x="72" y="542" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13.5" fill="#cfc7bb">Aucune esquisse, aucun wireframe, aucune planche de direction artistique avant le code : la mise en page</text>
+  <text x="72" y="564" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13.5" fill="#cfc7bb">a été écrite directement en CSS, puis corrigée sur captures. Les défauts listés dans docs/PROCESS.md §5</text>
+  <text x="72" y="586" font-family="Helvetica Neue, Segoe UI, sans-serif" font-size="13.5" fill="#cfc7bb">n’auraient pas survécu à un maquettage préalable.</text>
+</svg>

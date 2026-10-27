@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%2308070a'/%3E%3Cpath%20d='M16%204c4%205%207%209%207%2013a7%207%200%201%201-14%200c0-3%202-6%204-9%200%203%201%204%202%204%201%200%201-3%201-8z'%20fill='%23ff6a1f'/%3E%3C/svg%3E">
+<title>La Veillée — Les Neuf Portes (fiction 2027)</title>
+<meta name="description" content="Seconde découverte : neuf fragments narratifs à lire dans le noir, avec une nappe sonore générée et facultative. Prototype fictif et non officiel.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/experience.css">
+</head>
+<body class="page-veillee">
+<a class="skip" href="#main">Aller au contenu principal</a>
+
+<div class="strip" role="note">
+  <span class="strip-dot" aria-hidden="true"></span>
+  Concept indépendant et non officiel — édition anniversaire 2027 entièrement fictive.
+  <a href="dossier.html#transparence">Ce que cela implique</a>
+</div>
+
+<header class="bar">
+  <a class="brand" href="index.html" aria-label="Les Neuf Portes, accueil">
+    <span class="brand-mark" aria-hidden="true">IX</span>
+    <span class="brand-txt"><strong>Les Neuf Portes</strong><em>Le Pacte des Cendres — 2027</em></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <a href="descente.html">La Descente</a>
+    <a href="veillee.html" aria-current="page">La Veillée</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html">Dossier</a>
+  </nav>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<main id="main">
+
+  <section class="veille" id="veille">
+    <header class="veille-head">
+      <p class="kicker">Seconde découverte · lecture continue</p>
+      <h1>La Veillée</h1>
+      <p class="veille-lead">
+        Neuf fragments, dans l'ordre où la nuit les donne. Rien à chercher, rien à révéler :
+        seulement descendre. Comptez huit minutes, ou trois, selon votre patience.
+      </p>
+      <div class="veille-tools">
+        <button class="btn btn-small btn-ghost" id="soundBtn" aria-pressed="false">
+          Activer la nappe sonore
+        </button>
+        <p class="small muted" id="soundNote">Son généré en direct dans le navigateur (aucun fichier, aucun droit musical). Facultatif, coupé par défaut.</p>
+      </div>
+    </header>
+
+    <ol class="fragments">
+
+      <li class="fragment" data-door="0">
+        <p class="frag-rom">Porte I</p>
+        <h2>Cendre</h2>
+        <p class="frag-txt">Le premier soir, il n'y avait rien à voir. La scène était vide et pourtant
+        quelque chose s'y tenait déjà : la poussière de la veille, celle qu'on n'a jamais balayée.
+        Les Veuves de Fer sont entrées sans annonce, et le public s'est tu avant le premier accord.</p>
+        <p class="frag-act">Acte fictif : Les Veuves de Fer — Grand Autel, 21:40</p>
+      </li>
+
+      <li class="fragment" data-door="1">
+        <p class="frag-rom">Porte II</p>
+        <h2>Sel</h2>
+        <p class="frag-txt">On dit que le val était une mer avant d'être un champ. Le sel remonte
+        les soirs d'humidité, il sèche sur les cordes et brûle les lèvres. Marée Noire joue dos au vent,
+        exprès, pour que le son arrive sale.</p>
+        <p class="frag-act">Acte fictif : Marée Noire — Le Puits, 23:10</p>
+      </li>
+
+      <li class="fragment" data-door="2">
+        <p class="frag-rom">Porte III</p>
+        <h2>Verre</h2>
+        <p class="frag-txt">La troisième porte n'a pas de porte : c'est une verrière, et derrière elle
+        il n'y a pas de dehors. Vitrail chante derrière une vitre qui ne se brise jamais.
+        On entend surtout le souffle de ceux qui retiennent le leur.</p>
+        <p class="frag-act">Acte fictif : Vitrail — La Chapelle, 19:20</p>
+      </li>
+
+      <li class="fragment" data-door="3">
+        <p class="frag-rom">Porte IV</p>
+        <h2>Fer</h2>
+        <p class="frag-txt">Sous la Forge, il y a un rail. Personne ne sait où il mène, et chaque année
+        quelqu'un jure l'avoir suivi. Les Marteaux de Clisson frappent en mesure avec lui :
+        un coup pour le fer, un coup pour le silence entre les deux.</p>
+        <p class="frag-act">Acte fictif : Les Marteaux de Clisson — La Forge, 21:00</p>
+      </li>
+
+      <li class="fragment" data-door="4">
+        <p class="frag-rom">Porte V</p>
+        <h2>Braise</h2>
+        <p class="frag-txt">À minuit trente, le champ s'éteint. Pas de projecteurs : des braises,
+        disposées en cercle, une par porte. Feu Follet ne joue pas pour la foule,
+        il joue pour le courant d'air qui traverse le cercle.</p>
+        <p class="frag-act">Acte fictif : Feu Follet — Le Champ des Cendres, 00:30</p>
+      </li>
+
+      <li class="fragment" data-door="5">
+        <p class="frag-rom">Porte VI</p>
+        <h2>Cuir</h2>
+        <p class="frag-txt">Le dimanche commence trop tôt et trop près. Ronce joue dans la poussière,
+        sans barrières, et le public recule d'un pas à chaque morceau — pas de peur, par respect.
+        C'est la seule porte où l'on entre en marchant sur des lacets.</p>
+        <p class="frag-act">Acte fictif : Ronce — Le Puits, 17:00</p>
+      </li>
+
+      <li class="fragment" data-door="6">
+        <p class="frag-rom">Porte VII</p>
+        <h2>Pluie</h2>
+        <p class="frag-txt">Novembre porte le nom du mois où l'on aurait dû s'arrêter. Sa musique
+        est faite pour être écoutée sous un auvent, à trois mètres de la scène, avec l'impression
+        d'être à l'intérieur d'une pièce que personne n'a meublée.</p>
+        <p class="frag-act">Acte fictif : Novembre — La Chapelle, 18:40</p>
+      </li>
+
+      <li class="fragment" data-door="7">
+        <p class="frag-rom">Porte VIII</p>
+        <h2>Silence</h2>
+        <p class="frag-txt">Ils sont douze, ils n'ont pas de nom, et ils chantent sans micro.
+        Le Chœur des Sans-Nom demande au public de fermer les yeux : ce n'est pas une figure de style,
+        c'est la seule condition pour entendre la neuvième porte s'ouvrir.</p>
+        <p class="frag-act">Acte fictif : Chœur des Sans-Nom — Grand Autel, 20:15</p>
+      </li>
+
+      <li class="fragment" data-door="8">
+        <p class="frag-rom">Porte IX</p>
+        <h2>Aube</h2>
+        <p class="frag-txt">La dernière porte ne s'ouvre que si les huit autres ont été franchies.
+        Le Pacte n'est pas un spectacle : c'est vingt-deux minutes pendant lesquelles le public
+        tient la lumière à la place des techniciens. Ensuite, on range. Ensuite, on revient.</p>
+        <p class="frag-act">Acte fictif : Le Pacte — Grand Autel, 22:00</p>
+      </li>
+
+    </ol>
+
+    <section class="veille-end">
+      <p class="eyebrow">Fin de la veillée</p>
+      <h2>La nuit ne se raconte pas deux fois.</h2>
+      <p>Ce texte est une fiction intégrale : les groupes, les scènes, les heures et les anecdotes
+      ont été inventés pour ce prototype. Rien ici ne provient d'une programmation réelle.</p>
+      <div class="after-links">
+        <a class="btn btn-primary" href="descente.html">Descendre avec la flamme</a>
+        <a class="btn btn-ghost" href="infos.html">Voir le programme en clair</a>
+      </div>
+    </section>
+  </section>
+
+  <div class="progress" aria-hidden="true"><span id="progBar"></span></div>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-note"><strong>Concept indépendant et non officiel.</strong> Édition anniversaire 2027 entièrement fictive.
+  Aucune affiliation avec Hellfest Productions ni avec aucune organisation citée. Aucune transaction réelle, aucune donnée personnelle collectée.</p>
+  <nav class="foot-nav" aria-label="Liens de pied de page">
+    <a href="index.html">Accueil</a>
+    <a href="descente.html">La Descente</a>
+    <a href="infos.html">Infos pratiques</a>
+    <a href="dossier.html">Dossier &amp; méthode</a>
+    <a href="dossier.html#transparence">Transparence</a>
+  </nav>
+  <p class="foot-meta">Prototype HTML/CSS/JS sans dépendance externe · 2026</p>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/veillee.js"></script>
+</body>
+</html>

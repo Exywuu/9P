@@ -1,5 +1,7 @@
 # Daybreak — Les Neuf Portes · Le Pacte des Cendres
 
+**[Découvrir la démonstration en ligne →](https://exywuu.github.io/9P/)**
+
 > **Concept indépendant et non officiel. Édition anniversaire 2027 entièrement fictive.**
 > Aucun lien avec Hellfest Productions ni avec aucune des organisations citées.
 > Aucune transaction réelle, aucune donnée personnelle collectée, aucun compte.
